@@ -3,10 +3,10 @@
 "Primero hazlo correcto, luego hazlo rápido."
 
 ## Integrantes y Roles
-| Integrante                    | Rol   |
-|-------------------------------|-------|
-| Lira Roacho Saulo Sebastian   | (rol) |
-| Páez Pérez Ángel Antonio      | (rol) |
-| Pérez Ramírez Emely Mayte     | (rol) |
-| Rosales Meraz Ruth Paola      | (rol) |
-| Simental Muñoz Eliza Adelinne | (rol) |
+| Integrante                    | Rol                                            |
+|-------------------------------|------------------------------------------------|
+| Lira Roacho Saulo Sebastian   | Equipo de desarrollo                           |
+| Páez Pérez Ángel Antonio      | Product Owner                                  |
+| Pérez Ramírez Emely Mayte     | Equipo de desarrollo                           |
+| Rosales Meraz Ruth Paola      | Equipo de desarrollo                           |
+| Simental Muñoz Eliza Adelinne | Equipo de desarrollo y Scrum Master (Sprint 1)|
