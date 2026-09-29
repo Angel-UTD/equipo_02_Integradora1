@@ -1,4 +1,4 @@
-# equipo_02_Integradora1
+# equipo_02_Bit por bit
 
 "Primero hazlo correcto, luego hazlo rápido."
 
