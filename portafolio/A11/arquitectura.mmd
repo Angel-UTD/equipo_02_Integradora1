@@ -1,0 +1,23 @@
+flowchart TB
+    subgraph PRES["Capa de presentación · tkinter"]
+        CHK["Sistema Checador<br/>monitor + cámara externa"]
+        GES["Sistema Gestor<br/>laptop de recepción"]
+    end
+    subgraph LOG["Capa de lógica de negocio · Python (fuera de Docker)"]
+        CCH["Clase Checador<br/>registrar_entrada / registrar_salida / tiempo_instancia"]
+        FAC["Reconocimiento facial<br/>OpenCV + pillow"]
+        CEM["Clase Empleados<br/>agregar / consultar / modificar / eliminar"]
+        REP["Exportación de reportes<br/>Excel con openpyxl · PDF: librería por decidir"]
+    end
+    subgraph DAT["Capa de datos"]
+        DB[("MariaDB en Docker<br/>bd_asistencias · puerto 3307")]
+        ROS["Carpeta de rostros<br/>(fotos en disco, no en la BD)"]
+    end
+    CHK --> CCH
+    CHK -->|captura de cámara| FAC
+    GES --> CEM
+    GES -->|exporta| REP
+    CCH -->|mysql.connector| DB
+    CEM -->|mysql.connector| DB
+    REP -->|consulta checados| DB
+    FAC -->|lee y guarda rostros| ROS
